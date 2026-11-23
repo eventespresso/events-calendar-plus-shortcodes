@@ -3,9 +3,10 @@
  * Plugin Name:       Events Calendar Plus Shortcodes
  * Plugin URI:        https://www.eventespresso.com
  * Description:       WordPress shortcodes for Events Calendar Plus (Calendar+)
- * Version:           1.0.1
+ * Version:           1.0.2
  * Author:            Event Espresso
  * Author URI:        https://www.eventespresso.com/
+ * Update URI:        https://eventespresso.com/events-calendar-plus-shortcodes/
  * License:           GPLv3
  * License URI:       https://www.gnu.org/licenses/gpl-3.0.html
  * Text Domain:       events-calendar-plus
@@ -22,7 +23,7 @@
  *
  * You should have received a copy of the GNU General Public License
  * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA02110-1301USA
+ * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA021.0.1.001301USA
  */
 
 // If this file is called directly, abort.
@@ -38,7 +39,7 @@ const CALENDAR_PLUS_SHORTCODES_SLUG = 'events-calendar-plus-shortcodes';
 /**
  * The current version of the plugin. Uses semantic versioning.
  */
-const CALENDAR_PLUS_SHORTCODES_VERSION = '1.0.1';
+const CALENDAR_PLUS_SHORTCODES_VERSION = '1.0.2';
 
 define('CALENDAR_PLUS_SHORTCODES_BASE_PATH', plugin_dir_path(__FILE__));
 define('CALENDAR_PLUS_SHORTCODES_BASE_URL', plugin_dir_url(__FILE__));

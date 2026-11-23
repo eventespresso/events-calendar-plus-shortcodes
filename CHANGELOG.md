@@ -6,6 +6,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Releases
 
+### 1.0.2
+
+#### Added
+ - [C+ Custom Views ( List View,.. ) add-ons (#2215)](https://github.com/eventespresso/cafe/pull/2215)
+
+
+
+
+
+
+
+
 ### [1.0.1] - Initial release
 
 #### Added

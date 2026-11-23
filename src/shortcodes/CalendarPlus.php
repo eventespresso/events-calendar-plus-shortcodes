@@ -2,6 +2,8 @@
 
 namespace EventEspresso\CalendarPlusShortcodes\shortcodes;
 
+use EventEspresso\CalendarPlus\api\PriceRange;
+
 /**
  * CalendarPlus
  *
@@ -18,6 +20,8 @@ class CalendarPlus implements CalendarPlusShortcode
     private static array $allowed_views = [
         'agenda',
         'day',
+        'grid',
+        'list',
         'month',
         'week',
     ];
@@ -25,6 +29,7 @@ class CalendarPlus implements CalendarPlusShortcode
     private static array $allowed_filters = [
         'category',
         'location',
+        'price',
         'search',
         'tag',
         'venue',
@@ -46,12 +51,15 @@ class CalendarPlus implements CalendarPlusShortcode
                 'filters'         => '',
                 'venue'           => '',
                 'view'            => '',
+                'price-min'       => '',
+                'price-max'       => '',
                 /// managing individual filters
                 'filter-location' => '',
                 'filter-search'   => '',
                 'filter-venue'    => '',
                 'filter-category' => '',
                 'filter-tag'      => '',
+                'filter-price'    => '',
             ],
             $attributes,
             CalendarPlus::SHORTCODE
@@ -80,6 +88,16 @@ class CalendarPlus implements CalendarPlusShortcode
         // Check the venue attribute and handle it
         if ($attributes['venue'] !== "") {
             $calendar_props['venue'] = sanitize_text_field($attributes['venue']);
+        }
+
+        $price_range = PriceRange::normalize($attributes['price-min'], $attributes['price-max']);
+        $price_min   = $price_range['min'];
+        $price_max   = $price_range['max'];
+        if ($price_min !== '') {
+            $calendar_props['priceMin'] = sanitize_text_field($price_min);
+        }
+        if ($price_max !== '') {
+            $calendar_props['priceMax'] = sanitize_text_field($price_max);
         }
 
         // Loop through all the attributes and dynamically handle Individual filter

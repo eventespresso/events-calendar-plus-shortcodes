@@ -3,12 +3,12 @@
 Contributors: eventespresso, garthkoyle, pebblo, charliespider, mohsinsr, alexkuc, knazart
 Tags: events, calendar, event, schedule, organizer
 Donate link: https://calendarplus.io
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 Requires at least: 6.5
-Tested up to: 6.8.2
+Tested up to: 7.1.5
 Requires PHP: 7.4
 License: GPLv3
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 The Calendar+ Shortcodes plugin provides additional shortcode parameters to alter the Calendar+ features and layout.
 
@@ -35,9 +35,9 @@ Our Premium Plugins and Services:
 == Installation ==
 
 Manual Installation:
-- Download the plugin ZIP file
-- Go to Plugins > Add New > Upload Plugin, select the ZIP file, and click Install Now
-- Activate the plugin
+* Download the plugin ZIP file
+* Go to Plugins > Add New > Upload Plugin, select the ZIP file, and click Install Now
+* Activate the plugin
 
 That's it! Just configure your settings as you see fit, and you're on your way to creating events in style.
 
@@ -54,9 +54,13 @@ Remember to always make a backup of your database and files before updating!
 
 == Changelog ==
 
-= [1.0.1] Initial relase 2025-10-06 =
+= **v1.0.2** =
+**Added**
+* Add grid and list views and price filters to the Calendar Plus shortcode
 
-#### Added
- - [New Events Calendar Plus Shortcodes plugin (#1752)]
+= [1.0.1] Initial release 2025-10-06 =
+
+**Added**
+* [New Events Calendar Plus Shortcodes plugin (#1752)]
 
 ### For all versions, please see the full [changelog](https://github.com/eventespresso/events-calendar-plus-shortcodes/blob/MAIN/CHANGELOG.md) in our documentation
